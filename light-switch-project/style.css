@@ -1,0 +1,52 @@
+/* ANCHOR Main settings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 1em;
+  }
+  
+  /* ANCHOR Custom properties */
+  body {
+    --color-bg-white: #ffffff;
+    --color-black: #0c0c0c;
+    --color-bg-darkgrey: #313232cf;
+    
+  }
+  
+  body {
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--color-bg-white);
+    background: linear-gradient(0deg, var(--color-black)20%, var(--color-bg-white)40%);
+}
+
+  body {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn__container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    padding: 25rem;
+  }
+
+  .btn {
+   font-size: 2rem;
+   font-weight: lighter;
+   letter-spacing: 0.3rem;
+
+   border: 10px solid var(--color-black);
+   border-radius: 0.3rem;
+
+   padding: 1rem 4rem; 
+   
+   cursor: pointer;
+  }
