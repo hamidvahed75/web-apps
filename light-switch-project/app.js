@@ -2,25 +2,14 @@
 const dark_mode_btn = document.querySelector("#dark_mode_btn");
 const btn = document.querySelector(".btn");
 
-// Erstelle mir eine neue Variable um den aktuellen Zustand des Textes zu speichern
-let textToggled = false;
+// Den aktuellen Zustand des Textes zu speichern
+let changedText = false;
 
 dark_mode_btn.addEventListener("click", () => {
 
-    // if (textToggled) {
-    //     // Ist der Text bereits geändert, ändern ihn zurück
-    //     btn.innerHTML = "Good Morning"
-    // } else {
-    //     // Ist der Text noch nict geändert, ändern ihn zurück
-    //     btn.innerHTML = "Good Night"
-    // }
-    // // Den Zustand umkehren
-    // textToggled = !textToggled;
-
     // Mit ternären Operator den Zustand und den Text umkehren
-    btn.innerHTML = textToggled ? "Good Morning" : "Good Night";
-    // Den Zustand umkehren
-    textToggled = !textToggled;
+    btn.innerHTML = changedText ? "Good Morning" : "Good Night";
+    changedText = !changedText;
     
     btn.classList.toggle("box_shadow");
     
