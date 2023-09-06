@@ -1,0 +1,30 @@
+  /* ANCHOR Main settings*/
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      font-size: 1em;
+    }
+
+  /* ANCHOR Custom Properties */
+    body {
+        --primary-color: #ffffff;
+        --secondary-color: #0c0c0c; 
+    }
+    
+    body {
+      font-family: "Quicksand", sans-serif;
+      background-color: var(--primary-color);
+      background: linear-gradient(0deg, var(--secondary-color)20%, var(--primary-color)40%);
+      background-repeat: no-repeat;
+  }
+  
+    body {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
